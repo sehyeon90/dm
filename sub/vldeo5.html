@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/video.css">
+    <link rel="stylesheet" href="../css/aos.css">
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <script src="../js/jquery-3.5.1.min.js"></script>
+    <script src="../js/jquery-migrate-1.4.1.min.js"></script>   
+    <script src="../js/jquery.easing.1.3.js"></script>   
+    <script src="../js/aos.js"></script>
+    <title>Document</title>
+    <script type="text/javascript">      
+        $(document).ready(function(){ 
+            $("#head").load("sub_header2.html");  // 원하는 파일 경로를 삽입하면 된다
+            $("#foot").load("sub_footer2.html");  // 원하는 파일 경로를 삽입하면 된다
+            var cont1btn =document.getElementById("cont1");
+            cont1btn.onclick =function(){
+                document.getElementById("video").firstElementChild.src ="https://www.youtube.com/embed/mrAIqeULUL0";
+                $("#cont1").toggleClass("on");
+                $("#cont2, #cont3").removeClass("on");
+            }
+            var cont2btn =document.getElementById("cont2");
+            cont2btn.onclick =function(){
+                document.getElementById("video").firstElementChild.src ="https://www.youtube.com/embed/AsXxuIdpkWM";
+                $("#cont2").toggleClass("on");   
+                $("#cont1, #cont3").removeClass("on");
+            }
+            var cont3btn =document.getElementById("cont3");
+            cont3btn.onclick =function(){
+                document.getElementById("video").firstElementChild.src ="https://www.youtube.com/embed/xRbPAVnqtcs";
+                $("#cont3").toggleClass("on");  
+                $("#cont1, #cont2").removeClass("on");
+            }
+        }); 
+    </script>
+</head>
+<body>
+   <div id="wrap">
+        <div id="head"></div>
+        <div id="side">
+            <div class="side">
+                05<span class="s_line"></span>video
+            </div>
+        </div>
+        <div class="cont_wrap">
+            <div class="cont_video" data-aos="fade-up" data-aos-duration="3000">
+                <div class="title">VIDEO</div>
+                <div class="s_video" id="video">
+                    <iframe width="1278" height="719" src="https://www.youtube.com/embed/mrAIqeULUL0" frameborder="0"></iframe>
+                </div>
+                <div class="new_release_list vd_list">
+                    <div class="cont on" id="cont1">
+                        <a href="javascript:;">
+                            <div class="img">
+                                <img src="http://img.youtube.com/vi/mrAIqeULUL0/0.jpg" alt="Nonstop">
+                                <div class="list_hover">
+                                <img src="../images/Artist_img/ohmygirl/PLAY.png" alt="자세히 보기">
+                            </div>
+                            </div>
+                            <div class="txt">
+                                <p>워커홀릭<span>2019-09-10</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="cont" id="cont2">
+                        <a href="javascript:;">
+                            <div class="img">
+                                <img src="http://img.youtube.com/vi/AsXxuIdpkWM/0.jpg" alt="BUNGEE">
+                                <div class="list_hover">
+                                <img src="../images/Artist_img/ohmygirl/PLAY.png" alt="자세히 보기">
+                            </div>
+                            </div>
+                            <div class="txt">
+                                <p>나만, 봄<span>2019-04-02</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="cont" id="cont3">
+                        <a href="javascript:;">
+                            <div class="img">
+                                <img src="http://img.youtube.com/vi/xRbPAVnqtcs/0.jpg" alt="The fifth season">
+                                <div class="list_hover">
+                                <img src="../images/Artist_img/ohmygirl/PLAY.png" alt="자세히 보기">
+                            </div>
+                            </div>
+                            <div class="txt">
+                                <p>여행<span>2018-05-24</span></p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="page_button">
+                    <a href="vldeo4.html"><button type="button" class="p_btn"><img src="../images/Artist_img/ohmygirl/btn_prevpage.png" alt="이전"></button></a>
+                    <span class="number"><strong>2</strong>/<em>2</em></span>
+                    <button type="button" class="n_btn"><img src="../images/Artist_img/ohmygirl/btn_nextpage.png" alt="이후"></button>
+                </div>
+            </div>
+        </div>
+        <div id="foot"></div>
+    </div>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

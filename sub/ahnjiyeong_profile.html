@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DM-sub2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/sub2.css">
+    <link rel="stylesheet" href="../css/aos.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <script src="../js/jquery-3.5.1.min.js"></script>
+    <script src="../js/jquery.easing.1.3.js"></script>
+    <script src="../js/aos.js"></script>
+    <script src="https://kit.fontawesome.com/cf49693ca4.js" crossorigin="anonymous"></script>
+    <script>
+    $(document).ready(function(){
+     $("#header").load("sub_header2.html");
+     $("#footer").load("sub_footer2.html");
+    });
+    </script>
+ <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+ 
+</head>
+<body>
+<div id="wrap">
+<!--      header  -->
+      <div id="header"></div>
+      <div id="side">
+            <div class="side">
+                02<span class="s_line"></span>Profile
+            </div>
+        </div>
+<!--    sub2   -->
+    <div id="sub2">
+        <div class="cont profile" data-aos="fade-up" data-aos-duration="3000">
+        <div class="member_name">
+            <p>
+                <a href="#" onclick="fnTab(0)">Ahn ji-yeong</a>
+            </p>
+        </div>
+            <div class="pf_inner flag" id="0">
+                <div class="profile_img">
+                    <div class="color_bg artist_crbg"></div>
+                    <div class="artist_img"><img alt="" width="500" height="650" src="../images/Artist_img/ahnjiyeong/Profile2.jpg"></div>
+                </div>
+                <div class="profile_txt">
+                    <div class="name_tt">Ahn ji-yeong</div>
+                    <div>
+                        이름 : 안 지영 <br>생일 : 1995.09.14
+                    </div>
+                </div>
+            </div>
+    </div>
+    </div>
+     <script type="text/javascript">
+        function fnTab(param) {
+            hideEL();
+            showEL(param);
+        }
+        function hideEL() {
+            const tag = $(".member_name").siblings('.flag');
+            tag.removeClass('flag').hide();
+        }
+        function showEL(el) {
+            const tag = $(`#${el}`).show().addClass('flag');
+        }
+    </script>
+    <script>
+        AOS.init();
+    </script>
+<!--
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-46828308-37');
+    </script>
+-->
+       
+<!--     footer    -->
+       <div id="footer"></div>
+       
+       </div>
+    </body>
+</html>

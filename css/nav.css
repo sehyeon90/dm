@@ -1,0 +1,197 @@
+ #wrap {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    min-width: 1200px;
+    min-height: 100vh;
+    margin: 0 auto;
+}
+
+#nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-width: 1200px;
+    height: 120px;
+    z-index: 999;
+}
+.logo {
+    position: fixed;
+    top: 50px;
+    left: 3%;
+    z-index: 1;
+}
+.logo img {width: 150px;}
+.ohmygirl_logo {
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+    height: 100px;
+}
+.ohmygirl_logo img {
+    height: 100%;
+}
+.name {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 36pt;
+}
+.ham_menu {
+    position: fixed;
+    transition: 3s ease-in-out;
+    width: 45px;
+    height: 34px;
+    display: block;
+    top: 60px;
+    right: 3%;
+    z-index: 100;
+}
+.ham_menu span {
+    position: absolute;
+    height: 8px;
+    border-radius: 4px;
+    width: 100%;
+    background: #3d4146;
+    top: 0;
+    transition: transform .2s ease-in-out, opacity .2s ease-in-out;
+}
+
+.ham_menu span:nth-child(1) {
+    top: 0;
+}
+.ham_menu span:nth-child(2), .ham_menu span:nth-child(3) {
+    top: 13px;
+}
+.ham_menu span:nth-child(4) {
+    top: 26px;
+}
+.ham_menu.active span {
+    background-color: #fff;
+}
+.ham_menu.active span:nth-child(1), .ham_menu.active span:nth-child(4) {
+    opacity: 0;
+}
+.ham_menu.active span:nth-child(2) {
+    transform: rotate(45deg);
+}
+.ham_menu.active span:nth-child(3) {
+    transform: rotate(-45deg);
+}
+.overlay {
+    position: fixed;
+    background: #7ba9c3;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+nav ul li {
+    margin: 35px 0;
+    opacity: 0;
+    vertical-align: top;
+}
+nav ul li a {
+    color: #fff;
+    opacity: 0.75;
+/*    transition: opacity 0.2s ease;*/
+    font-size: 36px;
+    display: inline-block;
+}
+nav ul li a:hover {
+/*    opacity: 1;*/
+    letter-spacing: 0.1em;
+    transition: 0.3s;
+    color: navy;
+}
+@keyframes fadeInLeft {
+    0% {opacity: 0; transform: translateX(-25%);}
+    100% {opacity: 1; transform: translateX(0);}
+}
+.overlay.visible {
+    height: 100%;
+    opacity: .85;
+    visibility: visible;
+}
+.overlay.visible nav ul li {
+    animation: fadeInLeft 0.3s ease forwards;
+}
+.overlay.visible nav ul li:nth-child(1) {
+    animation-delay: 0.23s
+}
+.overlay.visible nav ul li:nth-child(2) {
+    animation-delay: 0.26s
+}
+.overlay.visible nav ul li:nth-child(3) {
+    animation-delay: 0.29s
+}
+.overlay.visible nav ul li:nth-child(4) {
+    animation-delay: 0.32s
+}
+.overlay.visible nav ul li:nth-child(5) {
+    animation-delay: 0.35s
+}
+#side {
+    position: absolute; 
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    min-width: 1200px;
+    max-width: 1200px;
+}
+.side {
+    position: fixed;
+    width: 350px;
+    top: 50%;
+    text-align: center;
+    right: -75px;
+    font-weight: 700;
+    font-size: 10pt;
+    letter-spacing: 0.1em;
+    color: #333;
+    transform: rotate(90deg);
+}
+.side span {
+    display: inline-block;
+    width: 130px;
+    border-top: 1px solid #000;
+    vertical-align: middle;
+    margin: 0 25px;
+}
+/*
+#topnav {width: 350px; position: fixed; right: -300px; top: 2%; height: 100%; background: #fff;}
+#topnav>a {position: absolute; left: 0; display: block;}
+#topnav>ul {position: absolute; right: 0; width: 300px; background: #fff;}
+#topnav>ul>li {width: 100%;}
+#topnav>ul>li>a {display: block; width: 100%; text-align: center; padding-top: 10px; padding-bottom: 10px;}
+#btn {
+    cursor: pointer;
+}
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background: #000;
+    margin: 6px 7px 0 ;
+    transition: 0.4s;
+}
+.change .bar1 {
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+.change .bar2 {
+    opacity: 0;
+}
+.change .bar3 {
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+*/
+

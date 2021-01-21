@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/aos.css">
+    <link rel="stylesheet" href="../css/Discography.css">
+    <script src="../js/jquery-3.5.1.min.js"></script>
+    <script src="../js/jquery-migrate-1.4.1.min.js"></script>   
+    <script src="../js/jquery.easing.1.3.js"></script> 
+    <script src="../js/aos.js"></script>
+    
+   <style>
+   </style>
+   <script type="text/javascript">       
+        $(document).ready(function(){ 
+            $("#head").load("sub_header2.html");  // 원하는 파일 경로를 삽입하면 된다
+            $("#four").load("sub_footer2.html");  // 원하는 파일 경로를 삽입하면 된다
+            // Modal을 가져옵니다.
+            var modals = document.getElementsByClassName("modal");
+            // Modal을 띄우는 클래스 이름을 가져옵니다.
+            var btns = document.getElementsByClassName("btn");
+            // Modal을 닫는 close 클래스를 가져옵니다.
+            var spanes = document.getElementsByClassName("close");
+            var funcs = [];
+
+            // Modal을 띄우고 닫는 클릭 이벤트를 정의한 함수
+            function Modal(num) {
+              return function() {
+                // 해당 클래스의 내용을 클릭하면 Modal을 띄웁니다.
+                btns[num].onclick =  function() {
+                    modals[num].style.display = "block";
+                    console.log(num);
+                };
+
+                // <span> 태그(X 버튼)를 클릭하면 Modal이 닫습니다.
+                spanes[num].onclick = function() {
+                    modals[num].style.display = "none";
+                };
+              };
+            }
+
+            // 원하는 Modal 수만큼 Modal 함수를 호출해서 funcs 함수에 정의합니다.
+            for(var i = 0; i < btns.length; i++) {
+              funcs[i] = Modal(i);
+            }
+
+            // 원하는 Modal 수만큼 funcs 함수를 호출합니다.
+            for(var j = 0; j < btns.length; j++) {
+              funcs[j]();
+            }
+
+            // Modal 영역 밖을 클릭하면 Modal을 닫습니다.
+            window.onclick = function(event) {
+              if (event.target.className == "modal") {
+                  event.target.style.display = "none";
+              }
+            };
+        });
+    </script>
+</head>
+<body>
+    <div id="head"></div>
+    <div id="side">
+        <div class="side">
+            03<span class="s_line"></span>Discography
+        </div>
+    </div>
+    <div class="cont_wrap">
+        <div class="cont_Discography" data-aos="fade-up" data-aos-duration="3000">
+            <div class="title">DISCOGRAPHY</div>
+            <div class="list">
+                <div class="cont btn">
+                    <a href="javascript:;">
+                        <div class="img">
+                            <img src="../images/Artist_img/ahnjiyeong/DISCOGRAPHY7.jfif" alt="">
+                            <div class="list_hover">
+                                <img src="../images/Artist_img/ohmygirl/more_view.png" alt="자세히 보기">
+                            </div>
+                        </div>
+                        </a>
+                        <div class="txt">
+                            <p>#첫사랑<span>2018-01-10</span></p>
+                        </div>
+                </div>
+                <!-- 첫 번째 Modal -->
+                <div class="modal">
+                  <div class="modal-content">
+                    <span class="close">&times;</span>  
+                    <div class="l_div"> 
+                        <img src="../images/Artist_img/ahnjiyeong/DISCOGRAPHY7.jfif" alt=""> 
+                    </div>     
+                    <div class="r_div">         
+                        <p class="name">볼빨간사춘기</p>
+                        <span>#첫사랑</span>
+                        <p class="txt">Dingo X BOL4 콜라보레이션 싱글 [#첫사랑]<br><br>
+국내 최대 모바일 미디어 Dingo와 순수한 사춘기 시절의 어엿한 대명사가 된 '볼빨간사춘기'가 콜라보레이션 싱글 앨범 [#첫사랑]을 발표한다.<br><br>
+
+Dingo X BOL4 콜라보레이션 싱글 [#첫사랑]은 약 2700만 명의 구독자를 보유해 월평균 조회 수 3.9억 건 이상을 기록하는 Dingo가 기획과 홍보를, 2016년 '볼빨간사춘기'를 발굴해 세상에 선보이며 가요계에 역대급 파란을 일으킴으로써 아티스트형 최고의 기획사로 입지를 다진 쇼파르뮤직이 제작 및 진행을 맡았다.<br><br>
+
+어느 누구에게나 아련한 기억으로 남아있는 첫사랑은 사랑이라는 애틋한 단어에 첫 이라는 수식어가 붙어 더욱 특별하게 느껴진다. 순수하고 서툴렀던 시절, 그 마음을 솔직하게 노래하는 "#첫사랑"은 좋아하는 아이에게 내 마음을 들킬까 괜히 엉뚱하고 짓궂게 놀렸던 그때의 마음과 감정을 고스란히 떠올려 웃음 짓게 한다. 안지영의 통통 튀는 보이스와 첫사랑의 두근거림을 표현하는 사랑스러운 가사가 돋보이는 곡이다.<br><br>
+
+전문 미디어 채널 Dingo와 음악성과 대중성을 고루 갖춘 아티스트형 레이블 쇼파르뮤직은 콜라보레이션 싱글 Dingo X BOL4 [#첫사랑]을 통해 각자의 자리에서 다시 한번 트렌드 메이커로서의 면모를 공고히 드러낼 전망이다.<br><br>
+
+한없이 두근거렸던 첫사랑의 기억, 우리 모두의 이야기
+Dingo X BOL4의 특별한 콜라보레이션 싱글 [#첫사랑]</p>
+                       <p class="d_list">TRACK LIST</p>
+                       <p class="listname">1. #첫사랑</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="cont btn">
+                    <a href="javascript:;">
+                        <div class="img">
+                            <img src="../images/Artist_img/ahnjiyeong/DISCOGRAPHY8.jfif" alt="">
+                            <div class="list_hover">
+                                <img src="../images/Artist_img/ohmygirl/more_view.png" alt="자세히 보기">
+                            </div>
+                        </div>
+                        </a>
+                        <div class="txt">
+                            <p>Red Diary Page.1<span>2017-09-28</span></p>
+                        </div>
+                </div>
+                <div class="modal">
+                  <div class="modal-content">
+                    <span class="close">&times;</span>  
+                    <div class="l_div"> 
+                        <img src="../images/Artist_img/ahnjiyeong/DISCOGRAPHY8.jfif" alt=""> 
+                    </div>     
+                    <div class="r_div">         
+                        <p class="name">볼빨간사춘기</p>
+                        <span>Red Diary Page.1</span>
+                        <p class="txt">어설퍼 귀여운, 완벽하지 않기에 더 사랑스러운 사춘기의 감정들, '볼빨간사춘기'의 [Red Diary Page.1]<br><br>
+설레는 만남부터 푸르게 시린 이별, 혼자의 순간까지.<br>
+순수한 사춘기에 영원히 머물고픈 볼빨간사춘기가 써 내려가는 Red Diary, 그 첫 번째 페이지.<br>
+지금 시작합니다.</p>
+                       <p class="d_list">TRACK LIST</p>
+                       <p class="listname">1. 썸 탈꺼야</p>
+                       <p class="listname">2. Blue</p>
+                       <p class="listname">3. 고쳐주세요</p>
+                       <p class="listname">4. 상상</p>
+                       <p class="listname">5. 나의 사춘기에게</p>
+                       <p class="listname">6. 썸 탈꺼야 (Chic ver)(CD Only)</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="cont btn">
+                    <a href="javascript:;">
+                        <div class="img">
+                            <img src="../images/Artist_img/ahnjiyeong/DISCOGRAPHY9.jfif" alt="Nonstop">
+                            <div class="list_hover">
+                                <img src="../images/Artist_img/ohmygirl/more_view.png" alt="자세히 보기">
+                            </div>
+                        </div>
+                    </a>
+                        <div class="txt">
+                            <p>남이 될 수 있을까<span>2017-06-13</span></p>
+                        </div>
+                </div>
+                 <div class="modal">
+                  <div class="modal-content">
+                    <span class="close">&times;</span>  
+                    <div class="l_div"> 
+                        <img src="../images/Artist_img/ahnjiyeong/DISCOGRAPHY9.jfif" alt=""> 
+                    </div>     
+                    <div class="r_div">         
+                        <p class="name">볼빨간사춘기</p>
+                        <span>남이 될 수 있을까</span>
+                        <p class="txt">'볼빨간사춘기', '스무살' - [남이 될 수 있을까]<br><br>
+한순간 던져진 한마디의 말로 시작되고 또 한순간 한마디의 말로 끝이 나는 우리의 관계. 그렇게 순간과 순간이 모여 만들어진 '우리'가 이렇게 쉽게 '남이 될 수 있을까'<br><br>
+
+소녀의 감성을 노래하는 '볼빨간사춘기' X 따뜻한 감성을 담아 노래하는 싱어송라이터 '스무살'의 완벽한 콜라보 앨범 [남이 될 수 있을까]. "남이 될 수 있을까"는 "우주를 줄게", "좋다고 말해" 뿐만 아니라 참여하는 곡마다 온라인 차트 롱런을 유지하며 높은 음원 성과를 거두고 있는 '볼빨간사춘기'와 "걷자, 집앞이야", "유아 (You Are)" 등으로 인디씬에서 새롭게 주목받고 있는 남성 싱어송라이터 '스무살'의 조화로운 하모니를 담아낸 듀엣곡이다. 특히 이별에 가까워진 남녀가 겪게 되는 상황과 감정들을 솔직하고 섬세하게 그려낸 이번 곡은 듀엣곡의 장점을 살려 '볼빨간사춘기' '안지영'과 '스무살'이 이야기를 주고받듯 이어지는 곡 전개가 매력적이다. 사랑과 이별, 그 사이에서 우리는 정말 남이 될 수 있을까? 사랑과 현실 앞에 선 모든 이들에게.<br><br>
+
+'볼빨간사춘기'X'스무살' - [남이 될 수 있을까]</p>
+                       <p class="d_list">TRACK LIST</p>
+                       <p class="listname">1. 남이 될 수 있을까</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="cont btn">
+                    <a href="javascript:;">
+                        <div class="img">
+                            <img src="../images/Artist_img/ahnjiyeong/DISCOGRAPHY10.jfif" alt="">
+                            <div class="list_hover">
+                                <img src="../images/Artist_img/ohmygirl/more_view.png" alt="자세히 보기">
+                            </div>
+                        </div>
+                    </a>
+                        <div class="txt">
+                            <p>Full Album RED PLANET 'Hidden Track'<span>2019-04-02</span></p>
+                        </div>
+                </div>
+                 <div class="modal">
+                  <div class="modal-content">
+                    <span class="close">&times;</span>  
+                    <div class="l_div"> 
+                        <img src="../images/Artist_img/ahnjiyeong/DISCOGRAPHY10.jfif" alt=""> 
+                    </div>     
+                    <div class="r_div">         
+                        <p class="name">볼빨간사춘기</p>
+                        <span>Full Album RED PLANET 'Hidden Track'</span>
+                        <p class="txt">'볼빨간 사춘기' [Full Album RED PLANET 'Hidden Track']<br><br>
+"좋다고 말해"는 [Full Album RED PLANET] 발매전 타이틀곡 선정을 위해 팬들과 함께 진행했던 '시크릿 음감회'에서 "우주를 줄게"에 밀려 아쉽게 타이틀곡으로 선정되지 못했던 곡으로서 예정대로라면 [Full Album RED PLANET] 발매 후 곧이어 싱글 앨범으로 발매할 예정이었지만, 정규 앨범이 생각보다 너무 큰 사랑을 얻게 됨과 동시에 "좋다고 말해"의 따뜻한 EP와 캐주얼하고 팝스러운 사운드 그리고 가사가 겨울에 한층 더 어울린다고 판단하여 일정을 조절하여 12월 중순에 발매하게 되었다.<br><br>
+
+"좋다고 말해"는 추운 겨울 가로등 아래에서 내게 좋아한다고 말했지만 돌연 다음날 모른척하고 지나치는 그에게 더 이상 고민하지 말고 확신을 달라는 순수하고 여린 소녀의 마음을 표현한 곡으로 리드미컬하고 밝은 멜로디와 솔직한 가사에서 특유의 볼빨간사춘기스러움이 잘 묻어난다.</p>
+                       <p class="d_list">TRACK LIST</p>
+                       <p class="listname">1. 좋다고 말해</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="cont btn">
+                    <a href="javascript:;">
+                        <div class="img">
+                            <img src="../images/Artist_img/ahnjiyeong/DISCOGRAPHY11.jfif" alt="">
+                            <div class="list_hover">
+                                <img src="../images/Artist_img/ohmygirl/more_view.png" alt="자세히 보기">
+                            </div>
+                        </div>
+                    </a>
+
+                        <div class="txt">
+                            <p>Full Album RED PLANET<span>2016-08-29</span></p>
+                        </div>
+                </div>
+                 <div class="modal">
+                  <div class="modal-content">
+                    <span class="close">&times;</span>  
+                    <div class="l_div"> 
+                        <img src="../images/Artist_img/ahnjiyeong/DISCOGRAPHY11.jfif" alt=""> 
+                    </div>     
+                    <div class="r_div">         
+                        <p class="name">볼빨간사춘기</p>
+                        <span>Full Album RED PLANET</span>
+                        <p class="txt">온전히 그녀들만의 색으로 가득 채워진 별, 볼빨간사춘기의 Full Album [RED PLANET]<br><br>
+특유의 순수한 소녀 감성으로 붉게 물들여져 있는 그녀들만의 세상은 어떤 세상일까?<br><br>
+
+올해 4월 Half Album [RED ICKLE]을 발매하며 2016년 화제의 신인밴드로 주목 받고 있는 여성 듀오 볼빨간사춘기가 Half Album의 완성체인 Full Album [RED PLANET]으로 돌아왔다.<br>
+더욱 다채롭고 깊어진 감성으로 촘촘하게 채워진 [RED PLANET]을 소개한다.</p>
+                       <p class="d_list">TRACK LIST</p>
+                       <p class="listname">1. 우주를 줄게 </p>
+                       <p class="listname">2. 싸운날</p>
+                       <p class="listname">3. You(=I)</p>
+                       <p class="listname">4. 심술</p>
+                       <p class="listname">5. 나만 안되는 연애</p>
+                       <p class="listname">6. 초콜릿</p>
+                       <p class="listname">7. 프리지아</p>
+                       <p class="listname">8. X Song</p>
+                       <p class="listname">9. 반지</p>
+                       <p class="listname">10. 사랑에 빠졌을 때</p>
+                       <p class="listname">11. 우주를 줄게 (Radio Edit) (CD Only)</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="cont btn">
+                    <a href="javascript:;">
+                        <div class="img">
+                            <img src="../images/Artist_img/ahnjiyeong/DISCOGRAPHY12.jfif" alt="">
+                            <div class="list_hover">
+                                <img src="../images/Artist_img/ohmygirl/more_view.png" alt="자세히 보기">
+                            </div>
+                        </div>
+                    </a>
+                        <div class="txt">
+                            <p>RED ICKLE<span>2016-04-22</span></p>
+                        </div>
+                </div>
+                 <div class="modal">
+                  <div class="modal-content">
+                    <span class="close">&times;</span>  
+                    <div class="l_div"> 
+                        <img src="../images/Artist_img/ahnjiyeong/DISCOGRAPHY12.jfif" alt=""> 
+                    </div>     
+                    <div class="r_div">         
+                        <p class="name">볼빨간사춘기</p>
+                        <span>RED ICKLE</span>
+                        <p class="txt">볼빨간사춘기 Half Album [RED ICKLE]<br><br>
+Hello.<br>
+We are Bolbbalgan4, the NEW FACE of Shofarmusic.<br>
+IN 2016 SUMMER, We will tell you all about our story.<br>
+Perhaps ‘THE APPLE.'</p>
+                       <p class="d_list">TRACK LIST</p>
+                       <p class="listname">1. 초콜릿</p>
+                       <p class="listname">2. 싸운날</p>
+                       <p class="listname">3. 반지</p>
+                       <p class="listname">4. 심술</p>
+                       <p class="listname">5. 가끔씩 (우지윤의 보컬 스틸)</p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="page_button">
+            <a href="Discography3.html"><button type="button" class="p_btn"><img src="../images/Artist_img/ohmygirl/btn_prevpage.png" alt="이전"></button></a>
+            <span class="number"><strong>2</strong>/<em>2</em></span>
+            <button type="button" class="n_btn"><img src="../images/Artist_img/ohmygirl/btn_nextpage.png" alt="이후"></button>
+        </div>
+    </div>
+    </div>
+    <div id="four"></div>
+    <script>
+        AOS.init();
+    </script>
+</body> 
+</html>

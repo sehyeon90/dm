@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/aos.css">
+    <link rel="stylesheet" href="../css/Discography.css">
+    <script src="../js/jquery-3.5.1.min.js"></script>
+    <script src="../js/jquery-migrate-1.4.1.min.js"></script>   
+    <script src="../js/jquery.easing.1.3.js"></script> 
+    <script src="../js/aos.js"></script>
+    
+   <style>
+   </style>
+   <script type="text/javascript">       
+        $(document).ready(function(){ 
+            $("#head").load("sub_header2.html");  // 원하는 파일 경로를 삽입하면 된다
+            $("#four").load("sub_footer2.html");  // 원하는 파일 경로를 삽입하면 된다
+            // Modal을 가져옵니다.
+            var modals = document.getElementsByClassName("modal");
+            // Modal을 띄우는 클래스 이름을 가져옵니다.
+            var btns = document.getElementsByClassName("btn");
+            // Modal을 닫는 close 클래스를 가져옵니다.
+            var spanes = document.getElementsByClassName("close");
+            var funcs = [];
+
+            // Modal을 띄우고 닫는 클릭 이벤트를 정의한 함수
+            function Modal(num) {
+              return function() {
+                // 해당 클래스의 내용을 클릭하면 Modal을 띄웁니다.
+                btns[num].onclick =  function() {
+                    modals[num].style.display = "block";
+                    console.log(num);
+                };
+
+                // <span> 태그(X 버튼)를 클릭하면 Modal이 닫습니다.
+                spanes[num].onclick = function() {
+                    modals[num].style.display = "none";
+                };
+              };
+            }
+
+            // 원하는 Modal 수만큼 Modal 함수를 호출해서 funcs 함수에 정의합니다.
+            for(var i = 0; i < btns.length; i++) {
+              funcs[i] = Modal(i);
+            }
+
+            // 원하는 Modal 수만큼 funcs 함수를 호출합니다.
+            for(var j = 0; j < btns.length; j++) {
+              funcs[j]();
+            }
+
+            // Modal 영역 밖을 클릭하면 Modal을 닫습니다.
+            window.onclick = function(event) {
+              if (event.target.className == "modal") {
+                  event.target.style.display = "none";
+              }
+            };
+        });
+    </script>
+</head>
+<body>
+    <div id="head"></div>
+    <div id="side">
+        <div class="side">
+            03<span class="s_line"></span>Discography
+        </div>
+    </div>
+    <div class="cont_wrap">
+        <div class="cont_Discography" data-aos="fade-up" data-aos-duration="3000">
+            <div class="title">DISCOGRAPHY</div>
+            <div class="list">
+                <div class="cont btn">
+                    <a href="javascript:;">
+                        <div class="img">
+                            <img src="../images/Artist_img/ahnjiyeong/DISCOGRAPHY1.jfif" alt="">
+                            <div class="list_hover">
+                                <img src="../images/Artist_img/ohmygirl/more_view.png" alt="자세히 보기">
+                            </div>
+                        </div>
+                        </a>
+                        <div class="txt">
+                            <p>Filmlet<span>2020-11-04</span></p>
+                        </div>
+                </div>
+                <!-- 첫 번째 Modal -->
+                <div class="modal">
+                  <div class="modal-content">
+                    <span class="close">&times;</span>  
+                    <div class="l_div"> 
+                        <img src="../images/Artist_img/ahnjiyeong/DISCOGRAPHY1.jfif" alt=""> 
+                    </div>     
+                    <div class="r_div">         
+                        <p class="name">볼빨간사춘기</p>
+                        <span>Filmlet</span>
+                        <p class="txt">제멋대로 살아가기에 아주 딱 맞는, 당신이 주인공인 단편영화<br><br>
+Filmlet (단편영화)<br><br>
+
+지금 당신의 삶을 짧은 단편영화로 그려본다면 어떨까. 예를 들자면 나의 단편영화는 대개 이렇다. 사랑에 목맨다거나, 어설프게 눈물을 훔친다거나, 또는 숨겨진 초능력이라도 있는 어벤져스의 히어로가 된 마냥 이따금씩 세상과 맞닥뜨릴 준비가 되어있다거나.<br><br>
+
+이처럼 삶이 꽤나 우습고 엉망진창이더라도 한 가지 알아야 할 사실이 있다. 당신은 당신이 가야 할 길을 정확히 알고 있다는 것. 영화 속 결말은 당신의 두 손에 꼭 쥐고 있으니까. 그래서 지금이 가장 찬란하게 빛나고 있으니까.<br><br>
+
+제멋대로 살아가기에 아주 딱 맞는, 당신이 주인공인 단편영화.<br>
+볼빨간사춘기의 [Filmlet]</p>
+                       <p class="d_list">TRACK LIST</p>
+                       <p class="listname">1. 빨간 립스틱</p>
+                       <p class="listname">2. Dancing Cartoon</p>
+                       <p class="listname">3. 바다를 사랑할 거야 (Demo Ver.) (CD only)</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="cont btn">
+                    <a href="javascript:;">
+                        <div class="img">
+                            <img src="../images/Artist_img/ahnjiyeong/DISCOGRAPHY2.jfif" alt="">
+                            <div class="list_hover">
+                                <img src="../images/Artist_img/ohmygirl/more_view.png" alt="자세히 보기">
+                            </div>
+                        </div>
+                        </a>
+                        <div class="txt">
+                            <p>사춘기집Ⅱ 꽃 본 나비<span>2020-05-13</span></p>
+                        </div>
+                </div>
+                <div class="modal">
+                  <div class="modal-content">
+                    <span class="close">&times;</span>  
+                    <div class="l_div"> 
+                        <img src="../images/Artist_img/ahnjiyeong/DISCOGRAPHY2.jfif" alt=""> 
+                    </div>     
+                    <div class="r_div">         
+                        <p class="name">볼빨간사춘기</p>
+                        <span>사춘기집Ⅱ 꽃 본 나비</span>
+                        <p class="txt">찬란한 사춘기의 잔상 [사춘기집Ⅱ 꽃 본 나비]<br><br>
+
+사랑스럽지만 위태롭고 불안해서 더 찬란한 사춘기, 그 두 번째 이야기.<br>
+지난 사춘기집Ⅰ에서 사춘기의 성장통을 그려냈다면, 이번 사춘기집Ⅱ에서는 성장하는 과정에서의 소중한 감정들을 하나하나 담아냈다.<br><br>
+
+사랑, 위로, 고마움, 그리고 아픈 마음.<br>
+이 모든 감정들이 누군가의 마음속 깊이 자리 잡아 꽃피워주길.<br><br>
+
+볼빨간사춘기 지음.<br><br>
+
+
+[꽃 본 나비] 사랑하는 사람을 만나서 기뻐하는 모습을 비유적으로 이르는 말.</p>
+                       <p class="d_list">TRACK LIST</p>
+                       <p class="listname">1. 빈칸을 채워주시오</p>
+                       <p class="listname">2. 품</p>
+                       <p class="listname">3. 나비와 고양이(feat.백현 (BAEKHYUN))</p>
+                       <p class="listname">4. 카운슬링</p>
+                       <p class="listname">5. 민들레</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="cont btn">
+                    <a href="javascript:;">
+                        <div class="img">
+                            <img src="../images/Artist_img/ahnjiyeong/DISCOGRAPHY3.jfif" alt="Nonstop">
+                            <div class="list_hover">
+                                <img src="../images/Artist_img/ohmygirl/more_view.png" alt="자세히 보기">
+                            </div>
+                        </div>
+                    </a>
+                        <div class="txt">
+                            <p>Two Five<span>2019-09-10</span></p>
+                        </div>
+                </div>
+                 <div class="modal">
+                  <div class="modal-content">
+                    <span class="close">&times;</span>  
+                    <div class="l_div"> 
+                        <img src="../images/Artist_img/ahnjiyeong/DISCOGRAPHY3.jfif" alt=""> 
+                    </div>     
+                    <div class="r_div">         
+                        <p class="name">볼빨간사춘기</p>
+                        <span>Two Five</span>
+                        <p class="txt">청춘의 찰나의 순간을 '볼빨간사춘기'만의 온전한 '25'로 채워낸 소녀들의 성장 이야기, 볼빨간사춘기 [Two Five]<br><br>
+Chapter #Two<br>
+The story of #Five</p>
+                       <p class="d_list">TRACK LIST</p>
+                       <p class="listname">1. 워커홀릭</p>
+                       <p class="listname">2. 25</p>
+                       <p class="listname">3. XX</p>
+                       <p class="listname">4. Taste</p>
+                       <p class="listname">5. 낮 (Day off)</p>
+                       <p class="listname">6. XX (Acoustic Ver.)</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="cont btn">
+                    <a href="javascript:;">
+                        <div class="img">
+                            <img src="../images/Artist_img/ahnjiyeong/DISCOGRAPHY4.jfif" alt="">
+                            <div class="list_hover">
+                                <img src="../images/Artist_img/ohmygirl/more_view.png" alt="자세히 보기">
+                            </div>
+                        </div>
+                    </a>
+                        <div class="txt">
+                            <p>사춘기집Ⅰ 꽃기운<span>2019-04-02</span></p>
+                        </div>
+                </div>
+                 <div class="modal">
+                  <div class="modal-content">
+                    <span class="close">&times;</span>  
+                    <div class="l_div"> 
+                        <img src="../images/Artist_img/ahnjiyeong/DISCOGRAPHY4.jfif" alt=""> 
+                    </div>     
+                    <div class="r_div">         
+                        <p class="name">볼빨간사춘기</p>
+                        <span>사춘기집Ⅰ 꽃기운</span>
+                        <p class="txt">사춘기 소녀들의 성장통 [사춘기집Ⅰ 꽃기운]<br><br>
+사랑스럽지만 위태롭고, 불안해서 더 찬란한 사춘기를 노래하는 소녀들의 첫 번째 계절, 봄<br>
+봄의 시작을 알리는 사춘기 소녀들의 동화 같은 이야기의 첫 장을 열어본다.<br>
+볼빨간사춘기 지음.<br><br>
+
+[꽃기운] 사춘기에 솟아나는 기운을 비유적으로 이르는 말</p>
+                       <p class="d_list">TRACK LIST</p>
+                       <p class="listname">1. 나들이 갈까</p>
+                       <p class="listname">2. 나만, 봄</p>
+                       <p class="listname">3. 별 보러 갈래?</p>
+                       <p class="listname">4. Seattle Alone</p>
+                       <p class="listname">5. Mermaid</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="cont btn">
+                    <a href="javascript:;">
+                        <div class="img">
+                            <img src="../images/Artist_img/ahnjiyeong/DISCOGRAPHY5.jfif" alt="">
+                            <div class="list_hover">
+                                <img src="../images/Artist_img/ohmygirl/more_view.png" alt="자세히 보기">
+                            </div>
+                        </div>
+                    </a>
+
+                        <div class="txt">
+                            <p>Red Diary 'Hidden Track'<span>2018-07-17</span></p>
+                        </div>
+                </div>
+                 <div class="modal">
+                  <div class="modal-content">
+                    <span class="close">&times;</span>  
+                    <div class="l_div"> 
+                        <img src="../images/Artist_img/ahnjiyeong/DISCOGRAPHY5.jfif" alt=""> 
+                    </div>     
+                    <div class="r_div">         
+                        <p class="name">볼빨간사춘기</p>
+                        <span>Red Diary 'Hidden Track'</span>
+                        <p class="txt">볼빨간사춘기 [Red Diary ‘Hidden Track’]<br><br>
+볼빨간사춘기 Red Diary, 그 마지막 장</p>
+                       <p class="d_list">TRACK LIST</p>
+                       <p class="listname">1. Dejavu </p>
+                       <p class="listname">2. 6 o'clock</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="cont btn">
+                    <a href="javascript:;">
+                        <div class="img">
+                            <img src="../images/Artist_img/ahnjiyeong/DISCOGRAPHY6.jfif" alt="">
+                            <div class="list_hover">
+                                <img src="../images/Artist_img/ohmygirl/more_view.png" alt="자세히 보기">
+                            </div>
+                        </div>
+                    </a>
+                        <div class="txt">
+                            <p>Red Diary Page.2<span>2018-05-24</span></p>
+                        </div>
+                </div>
+                 <div class="modal">
+                  <div class="modal-content">
+                    <span class="close">&times;</span>  
+                    <div class="l_div"> 
+                        <img src="../images/Artist_img/ahnjiyeong/DISCOGRAPHY6.jfif" alt=""> 
+                    </div>     
+                    <div class="r_div">         
+                        <p class="name">볼빨간사춘기</p>
+                        <span>Red Diary Page.2</span>
+                        <p class="txt">한편의 동화 같은, 궁금해서 자꾸만 넘겨보고 싶은 볼빨간사춘기 [Red Diary Page.2]<br><br>
+소중한 일기장처럼 그녀들의 깨끗하고 말간 감정들이 모든 사람들의 마음속에 오래 간직되기를 바라는 Red Diary, 두 번째 페이지.<br>
+조그마한 방 한 켠, 서랍 안에 숨겨두었던 볼빨간사춘기의 진심이 담긴 이야기들, 지금 전합니다.</p>
+                       <p class="d_list">TRACK LIST</p>
+                       <p class="listname">1. 바람사람</p>
+                       <p class="listname">2. 여행</p>
+                       <p class="listname">3. 야경</p>
+                       <p class="listname">4. 안녕, 곰인형</p>
+                       <p class="listname">5. Clip</p>
+                       <p class="listname">6. Lonely</p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="page_button">
+            <button type="button" class="p_btn"><img src="../images/Artist_img/ohmygirl/btn_prevpage.png" alt="이전"></button>
+            <span class="number"><strong>1</strong>/<em>2</em></span>
+            <a href="Discography4.html"><button type="button" class="n_btn"><img src="../images/Artist_img/ohmygirl/btn_nextpage.png" alt="이후"></button></a>
+        </div>
+    </div>
+    </div>
+    <div id="four"></div>
+    <script>
+        AOS.init();
+    </script>
+</body> 
+</html>

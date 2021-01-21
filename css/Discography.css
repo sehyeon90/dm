@@ -1,0 +1,224 @@
+.cont_wrap {max-width: 1200px; margin: 0 auto;}
+@keyframes fadeInUp {
+    0% {opacity: 0; transform: translateY(50px);}
+    100% {opacity: 1; transform: translateY(0);}
+}
+#side {
+    position: absolute; 
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    min-width: 1200px;
+    max-width: 1200px;
+}
+.side {
+    position: fixed;
+    width: 350px;
+    top: 50%;
+    text-align: center;
+    right: -75px;
+    font-weight: 700;
+    font-size: 10pt;
+    letter-spacing: 0.1em;
+    color: #333;
+    transform: rotate(90deg);
+}
+.side span {
+    display: inline-block;
+    width: 130px;
+    border-top: 1px solid #000;
+    vertical-align: middle;
+    margin: 0 25px;
+}
+.cont_Discography {
+    position: relative;
+    width: 1200px;
+    height: auto;
+    overflow: hidden;
+    margin: 0 auto;
+    z-index: 111;
+    padding: 160px 0 150px 0;
+}
+.title {
+    position: relative;
+    text-align: center;
+    top: 0;
+    font-size: 40pt;
+    color: #333;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+}
+.list {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin-top: 100px;
+    display: flex;
+    flex-flow: wrap;
+}
+.list .cont {
+    width: 31.2%;
+    margin: 1%;
+    float: left;
+}
+.list .img img {
+    vertical-align: top;
+    width: 100%;
+}
+.list .img {position: relative;}
+.list .img:hover .list_hover {
+    display: block;
+    transition: 0.2s;
+}
+.list .txt p {
+    font-size: 11pt;
+    font-weight: 400;
+}
+.list .txt span {
+    font-size: 9pt;
+    float: right;
+    line-height: 10px;
+    color: #484848;
+    margin-top: 7px;
+}
+.list_hover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.6);
+    text-align: center;
+    z-index: 1;
+    display: none;
+}
+.list_hover img {
+    max-width: 70px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -35px;
+    margin-left: -35px;
+}
+a {
+    color: #333;
+    text-decoration: none;
+}
+.page_button {
+    text-align: center;
+    margin: 50px 0 0 0;
+}
+.page_button img {
+    width: 100%;
+}
+button {
+    border: 0 none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.p_btn {
+    display: inline-block;
+    width: 11px;
+    height: 21px;
+    font-size: 1px;
+    color: transparent;
+    overflow: hidden;
+    vertical-align: middle;
+}
+.number {
+    display: inline-block;
+    padding: 0 30px;
+    color: #393939;
+    font-size: 15px;
+    height: 21px;
+    line-height: 21px;
+    vertical-align: middle;
+    letter-spacing: 0;
+}
+em {font-style: normal;}
+.n_btn {
+    display: inline-block;
+    width: 11px;
+    height: 21px;
+    font-size: 1px;
+    color: transparent;
+    overflow: hidden;
+    vertical-align: middle;
+}
+.dnone{
+    display: none;
+}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 10%;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.0);
+}
+        /* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 30px 20px;
+    border: 1px solid #888;
+    width: 100%;
+    float: left;
+}
+.modal-content .l_div {
+    width: 40%;
+    overflow: hidden;
+    box-shadow: 20px 10px 20px 0 #bdbcbc;
+    margin-right: 50px;
+}
+.modal-content .r_div {
+    width: 55%;
+}
+.modal-content div {
+    margin-top: 50px;
+    float: left;
+}
+.modal-content img{
+    width: 100%;
+}
+.modal-content .r_div .name {
+    text-align: left;
+    font-size: 15pt;
+    margin-bottom: 10px;
+}
+.modal-content .r_div span {
+    font-size: 25pt;
+    line-height: 35px;
+    font-weight: 550;
+}
+.modal-content .r_div .txt {
+    font-size: 11pt;
+    line-height: 25px;
+    padding: 50px 0;
+}
+.modal-content .r_div .d_list {
+    font-size: 12pt;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.modal-content .r_div .listname {
+    font-size: 10pt;
+    line-height: 25px;
+    font-weight: 600;
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.close:hover, .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

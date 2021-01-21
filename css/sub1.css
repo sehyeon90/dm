@@ -1,0 +1,236 @@
+@charset "unf-8";
+
+* {
+  box-sizing: border-box;
+}
+
+#wrap {
+       width: 100%;
+       margin: 0 auto;
+ }
+
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/*sub1*/
+.sub1_wrap {
+    margin: 15% 0;
+}
+#sub1 .sub1_img .img{
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 1000px;
+    margin-bottom: 160px;
+}
+
+#sub1 .sub1_img .sub1_img1 {
+   width: 100%; margin: 0 auto;
+    float: left;
+    width: 330px; height: 350px; 
+    background-color: #eee;
+    margin: 30px 100px 100px 0;
+    
+}
+#sub1 .sub1_img .sub1_img1 {
+    transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transition: all 0.3s ease-in-out;   /* 부드러운 모션을 위해 추가*/
+}
+#sub1 .sub1_img .sub1_img1:hover{
+     transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+#sub1 .sub1_img {
+   text-align: center;
+}
+#sub1 .sub1_img p {
+  margin-top: 30px;
+    font-size: 20px;
+}
+
+#sub1 .sub1_img .sub1_img2{
+   width: 100%; margin: 0 auto;
+    float: left;
+    width: 330px; height: 350px; 
+    background-color: #eee;
+    margin: 100px 100px 100px 0; 
+}
+#sub1 .sub1_img .sub1_img2 {
+    transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transition: all 0.3s ease-in-out;   /* 부드러운 모션을 위해 추가*/
+}
+#sub1 .sub1_img .sub1_img2:hover{
+     transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+#sub1 .sub1_img .sub1_img3{
+    width: 100%;
+    width: 330px; height: 350px;
+    background-color: #eee;
+    float: left;
+    margin: 30px 0px 100px 0;
+}
+#sub1 .sub1_img .sub1_img3 {
+    transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transition: all 0.3s ease-in-out;   /* 부드러운 모션을 위해 추가*/
+}
+#sub1 .sub1_img .sub1_img3:hover{
+     transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+#sub1 .sub1_img .sub1_img4 {
+   width: 100%; margin: 0 auto;
+    float: left;
+    width: 330px; height: 350px; 
+    background-color: #eee;
+    margin: 0 100px 100px 0px;
+}
+#sub1 .sub1_img .sub1_img4 {
+    transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transition: all 0.3s ease-in-out;   /* 부드러운 모션을 위해 추가*/
+}
+#sub1 .sub1_img .sub1_img4:hover{
+     transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+#sub1 .sub1_img .sub1_img5{
+   width: 100%; margin: 0 auto;
+    float: left;
+    width: 330px; height: 350px; 
+    background-color: #eee;
+     margin: 100px 100px 0px 0; 
+}
+#sub1 .sub1_img .sub1_img5 {
+    transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transition: all 0.3s ease-in-out;   /* 부드러운 모션을 위해 추가*/
+}
+#sub1 .sub1_img .sub1_img5:hover{
+     transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+#sub1 .sub1_img .sub1_img6{
+    width: 100%;
+    width: 330px; height: 350px;
+    background-color: #eee;
+    float: left;
+}
+#sub1 .sub1_img .sub1_img6 {
+    transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transition: all 0.3s ease-in-out;   /* 부드러운 모션을 위해 추가*/
+}
+#sub1 .sub1_img .sub1_img6:hover{
+     transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+/*section*/
+#section {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+#section .section_1 .section_01{
+    width: 1200px;
+    height: 400px;
+    background-color: #eee;
+    margin-bottom: 160px;
+}
+#section .section_1 .section_01:hover{
+     transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+    transition: all 0.5s ease-in-out; 
+}
+#section .section_1 {
+   text-align: center;
+}
+#section .section_1 p {
+    margin-top: 30px;
+    font-size: 20px;
+}
+#section .section_1 .section_02{
+    width: 1200px;
+    height: 400px;
+    background-color: #eee;
+    margin-bottom: 160px;
+}
+#section .section_1 .section_02:hover{
+     transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+    transition: all 0.5s ease-in-out; 
+}
+#section .section_1 .section_03{
+    width: 1200px;
+    height: 400px;
+    background-color: #eee;
+    margin-bottom: 160px;
+}
+#section .section_1 .section_03:hover{
+     transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+    transition: all 0.5s ease-in-out; 
+}
+#section .section_1 .section_04{
+    width: 1200px;
+    height: 400px;
+    background-color: #eee;
+}
+#section .section_1 .section_04:hover{
+     transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+    transition: all 0.5s ease-in-out; 
+}

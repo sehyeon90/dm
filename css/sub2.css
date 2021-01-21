@@ -1,0 +1,158 @@
+@charset "unf-8";
+
+* {
+  box-sizing: border-box;
+}
+
+#wrap {
+       width: 100%;
+       margin: 0 auto;
+    position: relative;
+ }
+#side {
+    position: absolute; 
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    min-width: 1200px;
+    max-width: 1200px;
+}
+.side {
+    position: fixed;
+    width: 350px;
+    top: 50%;
+    text-align: center;
+    right: -75px;
+    font-weight: 700;
+    font-size: 10pt;
+    letter-spacing: 0.1em;
+    color: #333;
+    transform: rotate(90deg);
+}
+.side span {
+    display: inline-block;
+    width: 130px;
+    border-top: 1px solid #000;
+    vertical-align: middle;
+    margin: 0 25px;
+}
+
+#sub2 {
+    max-width: 1200px; margin: 0 auto;
+}
+.cont {
+    position: absolute;
+    width: 1000px;
+    top: 10%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    padding: 60px 0;
+    z-index: 99;
+    overflow: hidden;
+    height: auto;
+    margin: 0 auto;
+}
+.cont.profile > div {
+    float: left;
+}
+.member_name {
+    position: relative;
+    width: 160px;
+    margin-right: 40px;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.2em;
+    text-align: right;
+}
+.member_name p {
+    margin-bottom: 7px;
+}
+.pf_inner {
+    position: relative;
+    width: 80%;
+    height: auto;
+}
+.profile_img {
+    position: relative;
+    width: 530px;
+    height: 675px;
+}
+.color_bg {
+    position: absolute;
+    width: 450px;
+    height: 650px;
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+    background-color: #7ba9c3 !important;
+}
+.artist_img {
+    position: relative;
+    width: 86%;
+    margin: 0 auto;
+    top: 40px;
+    left: 0;
+    box-shadow: 15px 15px 20px 0 #bdbcbc;
+}
+.artist_img img {
+    width: 100%;
+    object-fit: fill;
+    vertical-align: bottom;
+}
+.profile_txt {
+    position: absolute;
+    width: 275px;
+    bottom: 10px;
+    right: 0;
+}
+.profile_txt .name_tt {
+    position: relative;
+    font-size: 25pt;
+    font-weight: 100;
+    letter-spacing: 0.05em;
+    margin-bottom: 15px;
+}
+.profile_txt div {
+    position: relative;
+    font-size: 12pt;
+    font-weight: 400;
+    margin-top: 10px;
+}
+.member_name p:hover {transform: scale(1.08); transition: 0.5s;}
+/*
+#sub2 .OHMYGLRL_sub2 .OHMYGLRL_sub2_btn{
+    width: 100%;
+    font-size: 20px;
+    position: absolute;
+    left: -130px;
+    line-height: 1.5;
+}
+#sub2 .OHMYGLRL_sub2{
+    width: 100%; 
+    width: 491px; height: 591px;
+    background: #7ba9c3;
+    position: relative;
+    margin-left: 430px;
+}
+.OHMYGLRL_sub2_btn{
+    max-width: 1200px;
+}
+
+
+#sub2 .OHMYGLRL_sub2_1{
+    width: 100%;
+    width: 494px; height: 591px;
+     _background: #eee; position: absolute;
+     margin-bottom: 120px; z-index: 1;
+    left: 70px; top: 70px;float: left;
+}
+#sub2 .OHMYGLRL_sub2_2 .OHMYGLRL_name{
+    position: absolute;
+    float: left; right: -130px; bottom: 0;
+    line-height: 1.5;
+}
+.artist_img img {
+    width: 100%;
+    height: 100%;
+}
+*/

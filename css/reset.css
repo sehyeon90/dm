@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li{
+    list-style: none;
+}
+img{
+    border: 0;
+    vertical-align: top;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+table{
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+caption{
+    text-indent: -99999;
+    display: none;
+}
+legend{
+    text-indent: -99999;
+    display: none;
+}

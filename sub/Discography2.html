@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/aos.css">
+    <link rel="stylesheet" href="../css/Discography.css">
+    <script src="../js/jquery-3.5.1.min.js"></script>
+    <script src="../js/jquery-migrate-1.4.1.min.js"></script>   
+    <script src="../js/jquery.easing.1.3.js"></script> 
+    <script src="../js/aos.js"></script>
+    
+   <style>
+   </style>
+   <script type="text/javascript">       
+        $(document).ready(function(){ 
+            $("#head").load("sub_header.html");  // 원하는 파일 경로를 삽입하면 된다
+            $("#four").load("sub_footer.html");  // 원하는 파일 경로를 삽입하면 된다
+            // Modal을 가져옵니다.
+            var modals = document.getElementsByClassName("modal");
+            // Modal을 띄우는 클래스 이름을 가져옵니다.
+            var btns = document.getElementsByClassName("btn");
+            // Modal을 닫는 close 클래스를 가져옵니다.
+            var spanes = document.getElementsByClassName("close");
+            var funcs = [];
+
+            // Modal을 띄우고 닫는 클릭 이벤트를 정의한 함수
+            function Modal(num) {
+              return function() {
+                // 해당 클래스의 내용을 클릭하면 Modal을 띄웁니다.
+                btns[num].onclick =  function() {
+                    modals[num].style.display = "block";
+                    console.log(num);
+                };
+
+                // <span> 태그(X 버튼)를 클릭하면 Modal이 닫습니다.
+                spanes[num].onclick = function() {
+                    modals[num].style.display = "none";
+                };
+              };
+            }
+
+            // 원하는 Modal 수만큼 Modal 함수를 호출해서 funcs 함수에 정의합니다.
+            for(var i = 0; i < btns.length; i++) {
+              funcs[i] = Modal(i);
+            }
+
+            // 원하는 Modal 수만큼 funcs 함수를 호출합니다.
+            for(var j = 0; j < btns.length; j++) {
+              funcs[j]();
+            }
+
+            // Modal 영역 밖을 클릭하면 Modal을 닫습니다.
+            window.onclick = function(event) {
+              if (event.target.className == "modal") {
+                  event.target.style.display = "none";
+              }
+            };
+        });
+    </script>
+</head>
+<body>
+    <div id="head"></div>
+    <div id="side">
+        <div class="side">
+            03<span class="s_line"></span>Discography
+        </div>
+    </div>
+    <div class="cont_wrap">
+        <div class="cont_Discography" data-aos="fade-up" data-aos-duration="3000">
+            <div class="title">DISCOGRAPHY</div>
+            <div class="list">
+                <div class="cont btn">
+                    <a href="javascript:;">
+                        <div class="img">
+                            <img src="../images/Artist_img/ohmygirl/Discography7.jpg" alt="Nonstop">
+                            <div class="list_hover">
+                                <img src="../images/Artist_img/ohmygirl/more_view.png" alt="자세히 보기">
+                            </div>
+                        </div>
+                        </a>
+                        <div class="txt">
+                            <p>Coloring Book<span>2017-04-03</span></p>
+                        </div>
+                </div>
+                <!-- 첫 번째 Modal -->
+                <div class="modal">
+                  <div class="modal-content">
+                    <span class="close">&times;</span>  
+                    <div class="l_div"> 
+                        <img src="../images/Artist_img/ohmygirl/Discography7.jpg" alt=""> 
+                    </div>     
+                    <div class="r_div">         
+                        <p class="name">OH MY GIRL</p>
+                        <span>Coloring Book</span>
+                        <p class="txt">오마이걸, 네 번째 미니 앨범 [COLORING BOOK] 발매!<br>
+타이틀 곡 "컬러링북 (Coloring Book)" 등 총 5곡 수록!<br><br>
+
+차세대 콘셉트 요정돌 오마이걸이 네 번째 미니 앨범 [COLORING BOOK]으로 전격 컴백한다. 이번 앨범은 팝 댄스 장르의 타이틀 곡 "컬러링북 (Coloring Book)"을 비롯해 "Real World", "Agit", "In My Dreams”, "Perfect Day" 등 총 5 트랙으로 구성되어있다. 또한 72, David Anthony, Valeria Del Prete, Mayu Wakisaka, Sean Alexander, Andreas Oberg, Darren Smith, 서지음, MaFly, 서정아 등 국내외 히트 작가들이 앨범에 참여하여, 오마이걸만의 다채로운 음악세계를 만날 수 있다.<br>
+-------------------------------------------------------------------------------------------------<br>
+지난해 “LIAR LIAR”, “WINDY DAY”, “내 얘길 들어봐”로 활발한 활동을 펼치며 대세 걸그룹으로 자리매김한 오마이걸은, 매 앨범마다 유니크한 음악과 완벽한 퍼포먼스로 수많은 리스너들의 사랑을 받아왔으며, 2017년 4월 3일 발매되는 미니 4집 [COLORING BOOK] 역시, 오마이걸의 새로운 음악과 무대를 기다려온 글로벌 음악 팬들의 뜨거운 반응이 기대된다.<br>
+
+이번 앨범의 타이틀곡 "컬러링북 (Coloring Book)”은 북유럽스타일의 트랙 위에 시작부터 끝까지 에너지 넘치는 변화무쌍한 멜로디와 반복되는 가사가 중독적인 곡으로, 봉숭아 컬러가 컬러링북에 물들듯 사랑에 빠진 소녀의 마음을 귀여운 가사로 담아낸 인상적인 팝 댄스 곡이다.<br>-------------------------------------------------------------------------------------------------</p>
+                       <p class="d_list">TRACK LIST</p>
+                       <p class="listname">1. 컬러링북 (Coloring Book)</p>
+                       <p class="listname">2. Real World</p>
+                       <p class="listname">3. Agit</p>
+                       <p class="listname">4. In My Dreams</p>
+                       <p class="listname">5. Perfect Day</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="cont btn">
+                    <a href="javascript:;">
+                        <div class="img">
+                            <img src="../images/Artist_img/ohmygirl/Discography8.jpg" alt="Nonstop">
+                            <div class="list_hover">
+                                <img src="../images/Artist_img/ohmygirl/more_view.png" alt="자세히 보기">
+                            </div>
+                        </div>
+                        </a>
+                        <div class="txt">
+                            <p>내 얘길 들어봐<span>2016-08-01</span></p>
+                        </div>
+                </div>
+                <div class="modal">
+                  <div class="modal-content">
+                    <span class="close">&times;</span>  
+                    <div class="l_div"> 
+                        <img src="../images/Artist_img/ohmygirl/Discography8.jpg" alt=""> 
+                    </div>     
+                    <div class="r_div">         
+                        <p class="name">OH MY GIRL</p>
+                        <span>내 얘길 들어봐</span>
+                        <p class="txt">바람의 요정 “오마이걸” Summer Special Album [내 얘길 들어봐] 공개<br>
+
+그 시절 우리가 좋아했던 곡들로 채워진 리메이크 썸머 스페셜 앨범<br><br>
+
+그 시절 여름, 재잘거리던 소녀들이 있다. 따가운 여름 햇빛아래 싱숭생숭해진 얼굴로 내게 속삭이던 친구. 새벽이면 문득 우리의 소중했던 기억들이 나의 귓가를 간지럽히지만 이내 바람 속으로 ‘퐁당' 숨어버린다. 지금의 너를 만나면, 나는 다시 어떤 대답을 해야 될까?<br>
+-------------------------------------------------------------------------------------------------<br>
+2016년 여름, 오마이걸이 전하는 여름 이야기. “내 얘길 들어봐”<br>
+
+오마이걸만이 표현할 수 있는 독특한 컨셉과 음악으로 컨셉 요정이라 불리며 리스너들의 눈과 귀
+를 사로 잡았던 오마이걸이 여름 스페셜 앨범으로 돌아온다.<br>
+한 낮의 무더위로 지칠 때쯤, 당신을 시원하게 해줄 싱그러운 매력이 가득한 음악들로, 때론 여동생처럼 때론 친구처럼 다가와, 오마이걸이 몰고 오는 시원한 바람이 당신의 여름을 시원하게
+해 줄 것이다.<br>-------------------------------------------------------------------------------------------------</p>
+                       <p class="d_list">TRACK LIST</p>
+                       <p class="listname">1. 내 얘길 들어봐(A-ing) (Feat. 스컬&하하)</p>
+                       <p class="listname">2. 한여름의 크리스마스</p>
+                       <p class="listname">3. Je T'aime</p>
+                       <p class="listname">4. 거짓말도 보여요</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="cont btn">
+                    <a href="javascript:;">
+                        <div class="img">
+                            <img src="../images/Artist_img/ohmygirl/Discography9.jpg" alt="Nonstop">
+                            <div class="list_hover">
+                                <img src="../images/Artist_img/ohmygirl/more_view.png" alt="자세히 보기">
+                            </div>
+                        </div>
+                    </a>
+                        <div class="txt">
+                            <p>WINDY DAY<span>2016-05-16</span></p>
+                        </div>
+                </div>
+                 <div class="modal">
+                  <div class="modal-content">
+                    <span class="close">&times;</span>  
+                    <div class="l_div"> 
+                        <img src="../images/Artist_img/ohmygirl/Discography9.jpg" alt=""> 
+                    </div>     
+                    <div class="r_div">         
+                        <p class="name">OH MY GIRL</p>
+                        <span>WINDY DAY</span>
+                        <p class="txt">차세대 컨셉 요정돌 오마이걸! 리패키지 앨범 [WINDY DAY] 발매<br>
+
+- 국내 외 최고의 작가들과 또 한번의 동화 같은 이야기 완성!<br>
+- 싱그러운 청량감이 돋보이는 롤러코스터 같은 곡으로 새로운 변신 예고!<br><br>
+
+데뷔 일년 만에 글로벌 음악 팬들에게 눈 도장을 찍으며 차세대 걸그룹으로 떠오른 오마이걸이 리패키지 앨범 [WINDY DAY] 통해 또 한번 오마이걸만의 독보적인 컨셉트와 퍼포먼스로 변신을 예고 하고 있다.<br>
+-------------------------------------------------------------------------------------------------<br>
+이번 리패키지 앨범 [Windy Day]에는 세 번째 미니 앨범 수록 곡은 물론 타이틀곡 ‘WINDY DAY', ‘STUPID IN LOVE', ‘LIAR LIAR(Chinese Ver.) 등 총 8곡이 수록되어 있다.<br>
+
+타이틀곡 ‘윈디데이'는 케이팝씬에서는 이미 명성을 떨치고 있는 스웨덴 프로듀서 Maria Marcus,기타리스트 겸 작곡가 Andreas Oberg가 오마이걸을 위해 심혈을 기울여 만든 곡으로, 국내 최고 히트 작사가 서지음의 사랑에 빠진 소녀의 복잡 미묘한 마음을 바람에 묘사한 감각적인 가사가 인상적인 곡이다. 특히 곡의 처음부터 끝까지 변화무쌍한 전개가 오마이걸의 다양한 보이스와 매력적인 화성과 어울러져 곡을 들으면 마치 롤러코스터를 탄듯한 기분을 선사하며 리스너들의 귀를 즐겁게 해줄 것이다.<br>-------------------------------------------------------------------------------------------------</p>
+                       <p class="d_list">TRACK LIST</p>
+                       <p class="listname">1. WINDY DAY</p>
+                       <p class="listname">2. STUPID IN LOVE</p>
+                       <p class="listname">3. LIAR LIAR</p>
+                       <p class="listname">4. B612</p>
+                       <p class="listname">5. I FOUND LOVE</p>
+                       <p class="listname">6. KNOCK KNOCK</p>
+                       <p class="listname">7. 한 발짝 두 발짝</p>
+                       <p class="listname">8. LIAR LIAR (Chinese Ver.)</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="cont btn">
+                    <a href="javascript:;">
+                        <div class="img">
+                            <img src="../images/Artist_img/ohmygirl/Discography10.jpg" alt="Nonstop">
+                            <div class="list_hover">
+                                <img src="../images/Artist_img/ohmygirl/more_view.png" alt="자세히 보기">
+                            </div>
+                        </div>
+                    </a>
+                        <div class="txt">
+                            <p>PINK OCEAN<span>2016-03-28</span></p>
+                        </div>
+                </div>
+                 <div class="modal">
+                  <div class="modal-content">
+                    <span class="close">&times;</span>  
+                    <div class="l_div"> 
+                        <img src="../images/Artist_img/ohmygirl/Discography10.jpg" alt=""> 
+                    </div>     
+                    <div class="r_div">         
+                        <p class="name">OH MY GIRL</p>
+                        <span>PINK OCEAN</span>
+                        <p class="txt">오마이걸, 세 번째 미니 앨범 `PINK OCEAN` 발매!<br>
+소녀들의 핑크빛사랑법, 친구와의 우정이야기로 가득 펼쳐진 핑크바다!<br>
+
+콘셉트 요정 오마이걸! 사랑에 빠진 귀여운 여덟 소녀 " LIAR LIAR” 컴백<br><br>
+
+오마이걸이 세 번째 미니 앨범 `PINK OCEAN`을 발매하고 엉뚱하고 발랄한 소녀의 모습으로 컴백한다.<br>
+-------------------------------------------------------------------------------------------------<br>
+두 번째 미니 앨범 `CLOSER`를 통해 마치 한편의 판타지 영화를 보는 듯 몽환적이고 신비스러운 모습으로 미국 빌보드 등 해외 매체에서 글로벌 음악팬들에게 차세대 걸그룹으로 눈 도장을 찍은데 이어, 이번에는 사랑에 빠진 소녀의 엉뚱한 착각과 상상을 한편의 동화책을 보듯 오마이걸만의 독보적인 콘셉트와 퍼포먼스로 새로운 변신을 예고하여 글로벌 음악 팬들의 관심이 집중되고 있다.<br>
+
+사랑에 빠진 소녀들의 엉뚱한 상상을 노래한 타이틀곡 "LIAR LIAR”<br>
+
+이번 앨범에는 타이틀곡 "LIAR LIAR”를 포함해 오마이걸의 매력을 느낄 수 있는 총 5곡이 수록되어 있다. 소녀시대 Lion Heart를 작곡한 션알렉산더(Sean Alexander), 데렌스미쓰(Darren Smith),스웨덴 기타의 신 안드레아스오버그(Andreas Oberg), 영국 데이빗안토니(David Anthony)등 북미 유럽의 작가들과 B1A4진영, 작사가 서지음 등 국내외 히트메이커들이 참여하여 오마이걸만의 차별화된 음악으로 완성도 있는 앨범이 탄생되었다.<br>
+-------------------------------------------------------------------------------------------------</p>
+                       <p class="d_list">TRACK LIST</p>
+                       <p class="listname">1. LIAR LIAR</p>
+                       <p class="listname">2. B612</p>
+                       <p class="listname">3. I FOUND LOVE</p>
+                       <p class="listname">4. KNOCK KNOCK</p>
+                       <p class="listname">5. 한 발짝 두 발짝
+히트곡</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="cont btn">
+                    <a href="javascript:;">
+                        <div class="img">
+                            <img src="../images/Artist_img/ohmygirl/Discography11.jpg" alt="Nonstop">
+                            <div class="list_hover">
+                                <img src="../images/Artist_img/ohmygirl/more_view.png" alt="자세히 보기">
+                            </div>
+                        </div>
+                    </a>
+
+                        <div class="txt">
+                            <p>CLOSER<span>2015-10-08</span></p>
+                        </div>
+                </div>
+                 <div class="modal">
+                  <div class="modal-content">
+                    <span class="close">&times;</span>  
+                    <div class="l_div"> 
+                        <img src="../images/Artist_img/ohmygirl/Discography11.jpg" alt=""> 
+                    </div>     
+                    <div class="r_div">         
+                        <p class="name">OH MY GIRL</p>
+                        <span>CLOSER</span>
+                        <p class="txt">오마이걸, 두 번째 미니 앨범 [CLOSER] 발매!<br>
+
+타이틀곡 " CLOSER” 소녀의 순수한 감성을 담은 동화 같은 판타지 이야기<br>
+
+오마이걸이 두 번째 미니 앨범 [CLOSER]를 발매하고 몽환적인 신비한 모습으로 컴백한다.<br><br>
+-------------------------------------------------------------------------------------------------<br>
+첫 데뷔 앨범[OH MY GIRL]로 8명 멤버들의 다양한 매력을 발산하며 글로벌 음악 팬들에게 ‘차세대 걸그룹'으로 눈 도장을 찍으며 화려하게 데뷔한 만큼 두 번째 미니앨범에서 보여줄 오마이걸의 새로운 모습에 글로벌 음악 팬들의 관심이 집중되고 있다.<br>
+
+이번 앨범에는 타이틀곡 "CLOSER” 를 포함해 오마이걸의 매력을 느낄 수 있는 총 5곡이 수록되어 있다. 소녀시대 Lion Heart를 작곡한 션 알렉산더 (Sean Alexander), 데렌 스미쓰 (Darren Smith), 스웨덴 기타의 신 안드레아스 오버그 (Andreas Oberg), 오리콘 차트 5관왕 곡들에 전부 참여한 스웨덴 프로덕션팀 케널 (The Kennel)등 해외 작곡가를 비롯 작사가 김이나, 서지음까지 국내외 히트 메이커들이 함께 참여하여 완성도 있는 앨범으로 탄생되었다.<br>-------------------------------------------------------------------------------------------------</p>
+                       <p class="d_list">TRACK LIST</p>
+                       <p class="listname">1. CLOSER</p>
+                       <p class="listname">2. SAY NO MORE</p>
+                       <p class="listname">3. PLAYGROUND</p>
+                       <p class="listname">4. SUGAR BABY</p>
+                       <p class="listname">5. ROUND ABOUT</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="cont btn">
+                    <a href="javascript:;">
+                        <div class="img">
+                            <img src="../images/Artist_img/ohmygirl/Discography12.jpg" alt="Nonstop">
+                            <div class="list_hover">
+                                <img src="../images/Artist_img/ohmygirl/more_view.png" alt="자세히 보기">
+                            </div>
+                        </div>
+                    </a>
+                        <div class="txt">
+                            <p>OH MY GIRL<span>2015-04-20</span></p>
+                        </div>
+                </div>
+                 <div class="modal">
+                  <div class="modal-content">
+                    <span class="close">&times;</span>  
+                    <div class="l_div"> 
+                        <img src="../images/Artist_img/ohmygirl/Discography12.jpg" alt=""> 
+                    </div>     
+                    <div class="r_div">         
+                        <p class="name">OH MY GIRL</p>
+                        <span>OH MY GIRL</span>
+                        <p class="txt">찾았다! 오마이걸!(Oh My Girl) 2015년봄! 8명의 큐피드가 당신을 찾아온다.<br><br>
+#OMG DAY? 뜻을 알 수 없는 해시태그와 함께 사진 속 움직이는 8명의 소녀들이 마침내 '오마이걸' 로 모습을 공개했다.<br>
+-------------------------------------------------------------------------------------------------<br>
+팀 명을 공개하기 전 이색적인 티저 영상을 통해 글로벌 음악 팬들의 관심을 받으며 차세대 걸그룹 출격 준비를 마친 오마이걸은 과거 천재 소녀로 주목 받았던 승희를 비롯하여 효정, 진이, 미미, 유아, 지호, 비니, 아린 총 8명의 멤버로 구성되어 있다. 오마이걸은 멤버 각각의 뛰어난 재능과 다양한 매력으로 대중들의 가슴속에 '마이걸(my girl)'로 남고자 하는 당찬 소녀들의 포부가 담긴 이름이다.<br>
+
+특히 이번에 발매 되는 오마이걸의 첫 데뷔 앨범"OH MY GIRL" 은 8명 멤버들의 다양한 매력을 물씬 느낄 수 있는 총 4곡이 수록되어 있어, 2015년 글로벌 음악 팬들의 최고의 기대주로 더욱 뜨거운 관심을 얻을 것으로 기대된다.<br>
+
+오마이걸의 첫 번째 데뷔 앨범 타이틀곡 CUPID는 세계적인 팝스타 저스틴 비버의 프로듀서로 유명한 신혁 프로듀서와 그의 작곡팀인 Joombas Music Factory의 곡으로 국내 최고 히트 작사가인 김이나가 작사에 참여했다. 곡 도입부부터 귀를 사로잡는 메인 테마가 멤버들의 매력적인 보컬과 어우러져 오마이걸의 에너지를 느낄 수 있는 곡이다. 상대의 마음을 얻기 위해 큐피드를 동원하는 사랑에 빠진 귀여운 소녀를 표현한 가사와 오마이걸의 차별화된 퍼포먼스가 더해져 음악 팬들의 눈과 귀를 단숨에 매료시킬 전망이다.<br>-------------------------------------------------------------------------------------------------</p>
+                       <p class="d_list">TRACK LIST</p>
+                       <p class="listname">1. OH MY GIRL!</p>
+                       <p class="listname">2. CUPID</p>
+                       <p class="listname">3. HOT SUMMER NIGHTS</p>
+                       <p class="listname">4. 궁금한걸요</p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="page_button">
+            <a href="Discography.html"><button type="button" class="p_btn"><img src="../images/Artist_img/ohmygirl/btn_prevpage.png" alt="이전"></button></a>
+            <span class="number"><strong>2</strong>/<em>2</em></span>
+            <button type="button" class="n_btn"><img src="../images/Artist_img/ohmygirl/btn_nextpage.png" alt="이후"></button>
+        </div>
+    </div>
+    </div>
+    <div id="four"></div>
+    <script>
+        AOS.init();
+    </script>
+</body> 
+</html>

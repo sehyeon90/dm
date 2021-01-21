@@ -1,0 +1,53 @@
+@charset 'utf-8';
+
+/*content*/
+#content{
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+.slogan{
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 50px;
+}
+.slogan p{
+    font-weight: bold;
+}
+.slogan img{
+    margin-top: 50px;
+}
+
+.about{
+    text-align: center;
+    margin-bottom: 100px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.about h3{
+    font-weight: 100;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.about h1{
+    font-size: 24px;
+    margin-bottom: 100px;
+}
+.about p{
+    text-align: left;
+    font-size: 18px;
+}
+.line{
+    overflow: hidden;
+}
+.pp{
+    width: 50%;
+    margin: 0 auto;
+    float: left;
+    margin-bottom: 50px;
+}
+.p3{
+    clear: both;
+    margin-bottom: 100px;
+}
+

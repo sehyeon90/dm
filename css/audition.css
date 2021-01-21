@@ -1,0 +1,111 @@
+@charset 'utf-8';
+
+/*content*/
+#content{
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+.h1{
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 100;
+}
+.h3{
+    font-family: 'Noto Sans KR', sans-serif;
+    padding-top: 30px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 100;
+}
+#content_1{
+    height: 1400px;
+    font-family: 'Noto Sans KR', sans-serif;
+    box-shadow: 3px 19px 30px #000808;
+}
+#content .sub_1{
+    padding-top: 100px;
+    
+}
+#content .sub_1 .div{
+   width: 5%;
+    background: #ffe000;
+    height: 5px;
+    margin-left: 80px;
+}
+#content .sub_1 h1{
+    font-size: 40px;
+    font-weight: 300;
+    padding-left: 80px;
+}
+#content .sub_1 h3{
+    font-size: 18px;
+    font-weight: 300;
+    padding-left: 100px;
+    line-height: 3
+}
+
+#content .sub_2{
+    padding-top: 100px;
+    text-align: center;
+}
+#content .sub_2 .div{
+   width: 5%;
+    background: #ffe000;
+    height: 5px;
+    margin-left: 80px;
+}
+#content .sub_2 h1{
+    font-size: 40px;
+    font-weight: 300;
+    padding-left: 80px;
+    text-align: left;
+}
+#content .sub_2 h3{
+    font-size: 18px;
+    font-weight: 300;
+    padding-left: 160px;
+    line-height: 2;
+    padding-top: 30px;
+    text-align: left;  
+}
+#content .sub_2 img{
+   text-align: center;
+    padding-top: 30px;
+}
+
+#content .sub_4{
+    padding-top: 100px;
+    text-align: center;
+}
+#content .sub_4 .div{
+   width: 5%;
+    background: #ffe000;
+    height: 5px;
+    margin-left: 80px;
+}
+#content .sub_4 h1{
+    font-size: 40px;
+    font-weight: 300;
+    padding-left: 80px;
+    text-align: left;
+}
+#content .sub_4 .box_1{
+    margin-top: 130px;
+}
+#content .sub_4 .box_1 a{
+    border: 1px solid black;
+    padding: 15px;
+    background: ;
+    font-size: 20px;
+    font-weight: 300;
+}
+#content .sub_4 .box_1 a:hover{
+    background: black;
+    color: white;
+    border: none;
+}
+

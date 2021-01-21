@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>notice</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="../css/notice-reset.css.css">
+    <link rel="stylesheet" href="../css/notice.css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
+    
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <script src="../js/header.js"></script>
+    
+    <script src="../js/jquery-3.5.1.min.js"></script>
+    <script src="../js/prefixfree.min.js"></script>
+    <style>
+        #header .gnb li .sub2{
+            display: block;
+        }
+        #header .gnb li .sub2 li:nth-child(2){
+            text-decoration: underline;
+        }
+        #header .gnb li .sub2 li:nth-child(2) a{
+            font-weight: bold;
+        }
+        #header .gnb>li:nth-child(3)>a{
+            font-weight: bold;
+        }
+    </style>
+     <script type="text/javascript">
+	$(document).ready(
+	function(){
+		$("#head").load("header.html");
+		$("#four").load("footer.html");
+	});
+ </script>
+    <script>
+		
+        $(document).ready(function(){
+            var num = 0,
+                $button = $(".button1 > .page_wrap > .btn > a"),
+                $layout = $(".table_layout1 > ul"),
+                $left = $(".button1 > .page_wrap > .btnlb"),
+                $right = $(".button1 > .page_wrap > .btnrb"),
+                $first = $(".button1 > .page_wrap > .btnll"),
+                $end = $(".button1 > .page_wrap > .btnrr");
+
+            $button.click(function(){
+                var i = $(this).index();
+                
+                $button.removeClass();
+                $(".show_layout1 > .button1 > .page_wrap > .btn > a").eq(i).addClass("active");
+                
+                $layout.removeClass();
+                $(".show_layout1 > ul").eq(i).addClass("list");
+                num = i;
+            });
+ 
+            $left.click(function(e){
+                e.preventDefault();
+                console.log("1");
+                num = num-1;
+                if (num < 0) {
+                    num = 0;
+                    return; // 빠져나오기
+                }
+                motion();
+            });
+            
+            $right.click(function(e){
+                e.preventDefault();
+                $listNum = $(".show_layout1 >.button1 > .page_wrap > .btn > a").length;
+                console.log("$listNum:"+$listNum);
+                num = num+1;
+                if (num >= $listNum){
+                    num = $listNum-1;
+                    return;
+                }
+                motion();
+            });
+            function motion(){
+                $button.removeClass();
+                $(".show_layout1 > .button1 > .page_wrap > .btn > a").eq(num).addClass("active");
+                
+                $layout.removeClass();
+                $(".show_layout1 > ul").eq(num).addClass("list");
+//                num = i;         
+            }
+            
+            $first.click(function(e){
+                $button.removeClass();
+                $(".show_layout1 > .button1 > .page_wrap > .btn > a").eq(0).addClass("active");
+                $layout.removeClass();
+                $(".show_layout1 > ul").eq(0).addClass("list");
+                num=0;
+            });
+            $end.click(function(e){
+                var a = $(".show_layout1 >.button1 > .page_wrap > .btn > a").length-1;
+                $button.removeClass();
+                $(".show_layout1 > .button > .page_wrap > .btn > a").eq(a).addClass("active");
+                $layout.removeClass();
+                $(".show_layout1 > ul").eq(a).addClass("list");
+                num=a;
+            })
+        });
+    </script>
+    <script>
+        $(document).ready(function(){
+            var $menu = $("#menu_list ul li");
+            var $layout = $(".table_layout1");
+            
+            
+            $menu.click(function(){
+                var i = $(this).index();
+                
+                $menu.removeClass("move_m");
+                $(this).addClass("move_m");
+                $layout.removeClass("show_layout1");
+                $layout.eq(i).addClass("show_layout1");
+                $(".table_layout1>ul").removeClass();
+                $(".show_layout1>ul").eq(0).addClass("list");
+                $(".show_layout1 > .button1 > .page_wrap > .btn > a").removeClass();
+                $(".show_layout1 > .button1 > .page_wrap > .btn > a").eq(0).addClass("active");
+            });
+        });
+    </script>
+    
+    <script>
+        $(document).ready(function(){
+            var num = 0,
+                $button = $(".button2 > .page_wrap > .btn > a"),
+                $layout = $(".table_layout2 > ul"),
+                $left = $(".button2 > .page_wrap > .btnlb"),
+                $right = $(".button2 > .page_wrap > .btnrb"),
+                $first = $(".button2 > .page_wrap > .btnll"),
+                $end = $(".button2 > .page_wrap > .btnrr");
+                
+            $button.click(function(){
+                var i = $(this).index();
+                $button.removeClass();
+                $button.eq(i).addClass("active");
+                $layout.removeClass();
+                $layout.eq(i).addClass("list");
+                num = i;
+            });
+            
+            $left.click(function(e){
+                e.preventDefault();
+                num = num-1;
+                if (num < 0) {
+                    num = 0;
+                    return; // 빠져나오기
+                }
+                motion();
+            });
+            
+            $right.click(function(e){
+                e.preventDefault();
+                $listNum = $(".button2 > .page_wrap > .btn > a").length;
+                num = num+1;
+                if (num >= $listNum){
+                    num = $listNum-1;
+                    return;
+                }
+                motion();
+            });
+            function motion(){
+                $button.removeClass();
+                $button.eq(num).addClass("active");
+                $layout.removeClass();
+                $layout.eq(num).addClass("list");
+            }
+            
+            $first.click(function(e){
+                $button.removeClass();
+                $button.eq(0).addClass("active");
+                $layout.removeClass();
+                $layout.eq(0).addClass("list");
+                num=0;
+            });
+            $end.click(function(e){
+                var a = $(".button2 > .page_wrap > .btn > a").length-1;
+                $button.removeClass();
+                $button.eq(a).addClass("active");
+                $layout.removeClass();
+                $layout.eq(a).addClass("list");
+                num=a;
+            })
+        });
+    </script>
+</head>
+
+<body>
+    <header></header>
+   <div id="head"></div> 
+    <div id="m_header"></div>
+    <div id="menu">
+        <div id="menu_title">
+            <h1>NOTICE<span class="line"></span></h1>
+<!--            <div><img src="sub_other_img/icon_customer.png" alt="customer icon"></div>-->
+        </div>
+        
+        <div class="section section2">
+<!--           <h2>NOTICE</h2>-->
+            <div class="table_layout table_layout2 show_layout2">
+                <ul class="list">
+                    <li class="table_tr">
+                        <div class="num">10</div>
+                        <div class="subject">DM엔터테인먼트 홈페이지 개편</div>
+                        <div class="date">2020-12-23</div>
+                    </li>
+                    <li class="table_tr">
+                        <div class="num">9</div>
+                        <div class="subject">DM엔터테인먼트 홈페이지 개편</div>
+                        <div class="date">2020-10-26</div>
+                    </li>
+                    <li class="table_tr">
+                        <div class="num">8</div>
+                        <div class="subject">DM엔터테인먼트 홈페이지 개편</div>
+                        <div class="date">2019-11-21</div>
+                    </li>
+                    <li class="table_tr">
+                        <div class="num">7</div>
+                        <div class="subject">DM엔터테인먼트 홈페이지 개편</div>
+                        <div class="date">2019-06-18</div>
+                    </li>
+                    <li class="table_tr">
+                        <div class="num">6</div>
+                        <div class="subject">DM엔터테인먼트 홈페이지 개편</div>
+                        <div class="date">2018-12-04</div>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="table_tr">
+                        <div class="num">5</div>
+                        <div class="subject">DM엔터테인먼트 홈페이지 개편</div>
+                        <div class="date">2018-09-10</div>
+                    </li>
+                    <li class="table_tr">
+                        <div class="num">4</div>
+                        <div class="subject">DM엔터테인먼트 홈페이지 개편</div>
+                        <div class="date">2018-09-05</div>
+                    </li>
+                    <li class="table_tr">
+                        <div class="num">3</div>
+                        <div class="subject">DM엔터테인먼트 홈페이지 개편 </div>
+                        <div class="date">2018-08-06</div>
+                    </li>
+                    <li class="table_tr">
+                        <div class="num">2</div>
+                        <div class="subject">DM엔터테인먼트 홈페이지 개편</div>
+                        <div class="date">2018-04-23</div>
+                    </li>
+                    <li class="table_tr">
+                        <div class="num">1</div>
+                        <div class="subject">DM엔터테인먼트 홈페이지 개편</div>
+                        <div class="date">2017-12-01</div>
+                    </li>
+                </ul>
+
+                <div class="button button2">
+                    <div class="page_wrap">
+                        <a href="javascript:;" class="btnll"><img src="../images/arrow_ll.gif" alt=""></a>
+                        <a href="javascript:;" class="btnlb"><img src="../images/arrow_lb.gif" alt=""></a>
+                        <span class="btn">
+                            <a href="javascript:;" class="active">1</a>
+                            <a href="javascript:;">2</a>
+<!--                            <a href="javascript:;">3</a>-->
+<!--                            <a href="javascript:;">4</a>-->
+                        </span>
+                        <a href="javascript:;" class="btnrb"><img src="../images/arrow_rb.gif" alt=""></a>
+                        <a href="javascript:;" class="btnrr"><img src="../images/arrow_rr.gif" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>   
+    </div>
+    <footer></footer>
+    <div id="four"></div>
+</body>
+</html>

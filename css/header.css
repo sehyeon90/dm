@@ -1,0 +1,78 @@
+@charset 'utf-8';
+
+body.bgon{
+    background: #ccc;
+}
+.on{
+    transform: rotate(180deg);
+}
+
+/* Header */
+#header{
+    position: fixed;
+    top: 40px;
+    left: 40px;
+    z-index: 999;
+}
+#header h2{
+    width: 130px;
+    position: fixed;
+}
+#header h2 img{
+    width: 125px;
+}
+#header .gnb{
+    width: 130px;
+    font-family: 'Raleway', sans-serif;
+    position: relative;
+    top: 70px;
+}
+#header .gnb li{
+    _line-height: 35px;
+    font-size: 24px; 
+    letter-spacing: 1px;
+}
+#header .gnb li a{
+    color: black;
+    display: block;
+}
+.sub li a{
+    color: black;
+    font-size: 16px;
+    line-height: 20px;
+}
+.sub{
+    padding-left: 25px;
+    display: none;
+}
+
+
+#header .sns{
+    text-align: center;
+    width: 30px;
+    position: fixed;
+    top: 400px;
+    right: 40px;
+}
+#header .sns>hr{
+    border-top: 1px solid gray;;
+    margin: 0 auto;
+}
+#header .sns li:nth-child(1), #header .sns li:nth-child(3), #header .sns li:nth-child(4), #header .sns li:nth-child(5){
+    margin-bottom: 10px;
+}
+#header .sns li:nth-child(3){
+    margin-top: 10px;
+}
+#header .sns li:nth-child(7){
+    margin-top: 30px;
+    border-radius: 50%;
+    background: black; 
+    padding-bottom: 5px;
+}
+#header .sns li:nth-child(7) a{
+    color: white;
+}
+#header .sns li a{
+    font-size: 24px;
+}

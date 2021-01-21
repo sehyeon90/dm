@@ -1,0 +1,173 @@
+@charset 'utf-8'; 
+
+        body{
+            font-size: 16px;
+            
+        }
+#container{
+    margin-top: -120px;
+    margin-bottom: 200px;
+}
+
+      #join_box{
+        font-family: 'Noto Sans KR', sans-serif;
+        width: 1200px;
+        height: 800px;
+        margin: 0 auto;
+        box-shadow: 3px 19px 30px #000808;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding: 30px;
+        padding-left: 90px;
+        }
+
+        #container{
+            width: 100%;
+            position: relative;
+            top: 160px;
+        }
+
+        .h1{
+        font-family: 'Raleway', sans-serif;
+        padding-top: 0px;
+        text-align: center;
+        font-size: 60px;
+        font-weight: 100;
+            
+    
+        }
+         .div{
+        width: 280px;
+        background: #ffe000;
+        height: 5px;
+        margin: 0 auto;
+        }
+
+        .h3{
+        font-family: 'Noto Sans KR', sans-serif;
+        padding-top: 30px;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 100;
+        margin-bottom: 50px;
+        }
+
+
+      
+        #join > .join_title > h3:after{
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin-left: auto;
+            margin-right: auto;
+            content: '';
+            display: block;
+            width: 70px;
+            height: 5px;
+            background: #f0cf71;
+        }
+        #join_box{
+            max-width: 880px;
+            margin: 0 auto 80px auto;
+            position: relative;
+        }
+        #join_box:after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+        #join_box > h4{
+            font-size: 20px;
+        }
+        form{
+            max-width: 700px;
+            position: relative;
+            margin: 50px 0;
+        }
+        
+        form > p > span{
+            width: 20%;
+            display: inline-block;
+            line-height: 50px;
+        }
+        form > p > input[type="text"]{
+            height: 35px;
+        }
+         form > p > input[type="password"]{
+            height: 35px;
+        }
+        form > p > setect {
+            height: 35px;
+        }
+        
+        form > p > input[type="button"]{
+            height: 35px;
+            line-height: 34px;
+            padding: 0 10px;
+            border: 1px solid #bbbbbb;
+        }
+        .condition{
+            width: auto;
+            font-size: 14px;
+        }
+        .choice{
+            width: auto;
+            height: 20px;
+            font-size: 12px;
+            padding-left: 20%;
+            line-height: 0;
+        }
+        form > .join_terms{
+            margin: 50px auto 0 auto;
+            border: 1px solid #bbbbbb;
+        }
+        form > .join_terms > li{
+            position: relative;
+            line-height: 80px;
+            padding-left: 30px;
+            font-size: 16px;
+            border-bottom: 1px solid #bbbbbb;
+        }
+        form > .join_terms > li:nth-child(4){
+            border: 0;
+        }
+        form > .join_terms > li > input[type="checkbox"]{
+            width: 17px;
+            height: 17px;
+        }
+        
+        form > .join_terms > li > span{
+            padding-left: 20px;
+        }
+        form > .join_terms > li > .join_down{
+            position: absolute;
+            top: 25px;
+            right: 50px;
+            cursor: pointer;
+            transition: all 0.5s;
+        }
+        .on{
+            transform: rotate(180deg);
+            transition: all 0.5s;
+        }
+        form > .join_terms > li > textarea{
+            font-size: 12px;
+            position: relative;
+            z-index: 10;
+            width: 93%;
+        }
+        .join_btn{
+            display: block;
+            margin: 0 auto;
+            margin-right: 330px;
+            text-align: center;
+            line-height: 50px;
+            width: 150px;
+            height: 50px;
+            background: #39528a;
+            color: #f9f9f9;
+        }
+    
+    
+
+    
